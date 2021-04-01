@@ -148,6 +148,7 @@ section .titulo::after {
 .inicio .ancho-maximo {
     width: 100%;
     display: flex;
+    
 }
 
 .inicio .ancho-maximo .row{
@@ -173,8 +174,6 @@ section .titulo::after {
     color: #1da1f2;
     font-weight: 500;
 }
-
-
 /* contenido estilo de seleccion  */
 .contenido .sobre-contenido .izquierda {
     width: 45%;
@@ -188,6 +187,7 @@ section .titulo::after {
 }
 
 .contenido .sobre-contenido .derecha {
+    z-index: 2;
     width: 55%;
 }
 
@@ -226,14 +226,13 @@ section .titulo::after {
 
 /* seccion de porcentaje de lenguajes  */
 .habilidades .contenido-habilidades .columna {
-    width: calc(50% - 30px);
+    
+    width: calc(100%);
     width: 50%;
     height: auto;
     padding: 30px 30px;
     box-shadow: 2px 2px 5px #999;
 }
-
-
 .habilidades .contenido-habilidades .izquierda .barras{
     margin-bottom: 15px;
 }
@@ -287,6 +286,7 @@ section .titulo::after {
 /* enviar correo  */
 
 .contacto .contenido-contacto .columna {
+    z-index: 2;
     width: calc(100%);
 }
 
@@ -358,7 +358,6 @@ form .button-area button:hover {
     color: crimson;
     background: none;
 }
-
 
 /* nevegador responsivo */
 
@@ -481,32 +480,34 @@ form .button-area button:hover {
 /* ------------------------- */
 
 footer {
-    padding: 130px 0;
-    height: auto;
+    position:fixed;
+    right:0;
+    top:250px;
+    z-index: 1;
 }
 
 footer .redes-sociales {
-    display: flex;
+    display: inline-block;
     align-content: center;
     justify-content: center;
-    padding: 10px;
+    padding: 5px 0px;
     flex-wrap: wrap;
 }
 
 footer .redes-sociales a {
     display: block;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     background: #000;
     color: #fff;
-    margin: 10px;
+    margin: 0px;
     text-align: center;
     border-radius: 100px;
     transition: .3s ease all;
 }
 
 footer .redes-sociales .twitter {
-    background: #1da1f2;
+    background: #000;
 }
 
 footer .redes-sociales .facebook {
@@ -518,8 +519,8 @@ footer .redes-sociales .instagram {
 }
 
 footer .redes-sociales a i {
-    font-size: 20px;
-    line-height: 60px;
+    font-size: 25px;
+    line-height: 50px;
 }
 
 footer .contenedor-icono:hover a {
