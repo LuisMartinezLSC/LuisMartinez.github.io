@@ -77,7 +77,7 @@ section .titulo::after {
 
 .barradenavegacion.barrapegada {
     padding: 15px 0;
-    background: #220b34;
+    background: #ac8d9a;
 }
 
 .barradenavegacion .ancho-maximo {
@@ -132,11 +132,15 @@ section .titulo::after {
 /* texto de cabecera */
 .inicio {
     display: flex;
-    background: hsla(350, 73%, 44%, 1);
-    background: linear-gradient(90deg, hsla(350, 73%, 44%, 1) 0%, hsla(274, 65%, 12%, 1) 100%);
-    background: -moz-linear-gradient(90deg, hsla(350, 73%, 44%, 1) 0%, hsla(274, 65%, 12%, 1) 100%);
-    background: -webkit-linear-gradient(90deg, hsla(350, 73%, 44%, 1) 0%, hsla(274, 65%, 12%, 1) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#C11E38", endColorstr="#220B34", GradientType=1);
+    background: hsla(180, 13%, 58%, 1);
+
+    background: linear-gradient(90deg, hsla(180, 13%, 58%, 1) 0%, hsla(335, 16%, 61%, 1) 100%);
+    
+    background: -moz-linear-gradient(90deg, hsla(180, 13%, 58%, 1) 0%, hsla(335, 16%, 61%, 1) 100%);
+    
+    background: -webkit-linear-gradient(90deg, hsla(180, 13%, 58%, 1) 0%, hsla(335, 16%, 61%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#87A3A3", endColorstr="#AC8D9A", GradientType=1 );
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -169,9 +173,8 @@ section .titulo::after {
     font-size: 40px;
     margin: 5px 0;
 }
-
 .inicio .contenido-inicio .texto-3 span {
-    color: #1da1f2;
+    color: #60696b;
     font-weight: 500;
 }
 /* contenido estilo de seleccion  */
@@ -187,8 +190,8 @@ section .titulo::after {
 }
 
 .contenido .sobre-contenido .derecha {
-    z-index: 2;
     width: 55%;
+    
 }
 
 .contenido .sobre-contenido .derecha .texto {
@@ -286,7 +289,6 @@ section .titulo::after {
 /* enviar correo  */
 
 .contacto .contenido-contacto .columna {
-    z-index: 2;
     width: calc(100%);
 }
 
