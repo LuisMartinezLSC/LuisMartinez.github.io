@@ -29,13 +29,12 @@ section {
     margin: auto;
 }
 
-.inicio, .habilidades, .servicios, .contacto, .contenido {
+.inicio, .habilidades, .servicios, .contenido {
     font-family: 'Poppins', sans-serif;
 }
 
 .contenido .sobre-contenido,
-.habilidades .contenido-habilidades,
-.contacto .contenido-contacto {
+.habilidades .contenido-habilidades {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -288,61 +287,6 @@ section .titulo::after {
     opacity: 1;
 }
 
-
-/* enviar correo  */
-
-.contacto .contenido-contacto .columna {
-    width: calc(100%);
-}
-
-.contacto form .fields {
-    display: flex;
-}
-
-.contacto form .field,
-.contacto form .fields .field {
-    height: 45px;
-    width: 100%;
-    margin-bottom: 15px;
-}
-
-.contacto form .textarea {
-    height: 80px;
-    width: 100%;
-}
-
-.contacto form .name {
-    margin-right: 10px;
-}
-
-.contacto form .field input,
-.contacto form .textarea textarea {
-    height: 100%;
-    width: 100%;
-    border: 1px solid lightgrey;
-    border-radius: 6px;
-    outline: none;
-    padding: 0 15px;
-    font-size: 17px;
-    font-family: 'Poppins', sans-serif;
-    transition: all 0.3s ease;
-}
-
-.contacto form .field input:focus,
-.contacto form .textarea textarea:focus {
-    border-color: #b3b3b3;
-}
-
-.contacto form .textarea textarea {
-    padding-top: 10px;
-    resize: none;
-}
-
-.contacto form .button-area {
-    display: flex;
-    align-items: center;
-}
-
 form .button-area button {
     color: #fff;
     display: block;
@@ -434,8 +378,7 @@ form .button-area button:hover {
         flex: 100%;
     }
 
-    .habilidades .contenido-habilidades .columna,
-    .contacto .contenido-contacto .columna {
+    .habilidades .contenido-habilidades .columna {
         width: 100%;
         margin-bottom: 35px;
     }
@@ -465,13 +408,6 @@ form .button-area button:hover {
     }
     .contenido .sobre-contenido .derecha .texto {
         font-size: 19px;
-    }
-    .contacto form .fields{
-        flex-direction: column;
-    }
-    .contacto form .name,
-    .contacto form .email {
-        margin: 0;
     }
 }
 
