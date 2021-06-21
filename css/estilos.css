@@ -115,11 +115,11 @@ section .titulo::after {
 }
 
 .barradenavegacion .menu li a:hover {
-    color: #c11e38;
+    color: #87a3a3;
 }
 
 .barradenavegacion.barrapegada .menu li a:hover {
-    color: #c11e38;
+    color: #87a3a3;
 }
 /* estilo del menu */
 .menu-btn {
@@ -132,13 +132,9 @@ section .titulo::after {
 .inicio {
     display: flex;
     background: hsla(180, 13%, 58%, 1);
-
     background: linear-gradient(90deg, hsla(180, 13%, 58%, 1) 0%, hsla(335, 16%, 61%, 1) 100%);
-    
     background: -moz-linear-gradient(90deg, hsla(180, 13%, 58%, 1) 0%, hsla(335, 16%, 61%, 1) 100%);
-    
     background: -webkit-linear-gradient(90deg, hsla(180, 13%, 58%, 1) 0%, hsla(335, 16%, 61%, 1) 100%);
-    
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#87A3A3", endColorstr="#AC8D9A", GradientType=1 );
     height: 100vh;
     color: #fff;
@@ -337,7 +333,7 @@ form .button-area button:hover {
         width: 50%;
         right: -50%;
         top: 0;
-        background: #34073d;
+        background: #ac8d9a;
         text-align: center;
         padding-top: 80px;
         transition: all 0.3s ease;
