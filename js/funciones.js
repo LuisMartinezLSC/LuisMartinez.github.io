@@ -12,25 +12,33 @@ $(document).ready(function(){
         $('.barradenavegacion .menu').toggleClass("active");
         $('.menu-btn i').toggleClass("active");
 });
-$(document).ready(function(){
-    $(window).scroll(function(){
-            if(this.scrollY > 1150){
-                $('.skill-per').each(function(){
-                    var $this = $(this);
-                    var per = $this.attr('per');
-                    $this.css("width",per+'%');
-                    $({animatedValue: 0}).animate({animatedValue: per},{
-                      duration: 1000,
-                      step: function(){
-                        $this.attr('per', Math.floor(this.animatedValue) + '%');
-                      },
-                      complete: function(){
-                        $this.attr('per', Math.floor(this.animatedValue) + '%');
-                      }
-                    });
-                  });
-            }else{
-                $('.skill-per').removeClass("per");
-            }
-    })
+
+const skill = document.getElementById('habilidades');
+
+const progreso = document.querySelectorAll('.skill-per');
+
+function showProgress(){
+  progreso.forEach(progreso => {
+    const value = progreso.dataset.progress;
+    progreso.style.opacity = 1; 
+    progreso.style.width = `${value}%`;
+  });
+}
+function hideProgress(){
+  progreso.forEach(p => {
+    p.style.opacity = 0;
+    p.style.width = 0;
+  });
+}
+
+window.addEventListener('scroll',() => {
+  const sectionPos = skill.getBoundingClientRect().top;
+  const screenPos = window.innerHeight / 2;
+  
+  if(sectionPos < screenPos){
+    showProgress();
+  }
+  else{
+    hideProgress();
+  }
 });
