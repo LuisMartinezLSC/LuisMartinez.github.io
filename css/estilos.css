@@ -269,7 +269,7 @@ section .titulo::after {
 }
 
 /* services section styling */
-.servicio, .teams{
+.servicio{
     color:#fff;
     background: #87a3a3;
 }
