@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $(window).scroll(function(){
-        if(this.scrollY > 540){
+        if(this.scrollY > 585){
             $('.barradenavegacion').addClass("barrapegada");
         }else{
             $('.barradenavegacion').removeClass("barrapegada");

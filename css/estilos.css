@@ -77,7 +77,7 @@ section .titulo::after {
 
 .barradenavegacion.barrapegada {
     padding: 15px 0;
-    background: #ac8d9a;
+    background: #bbd2c5;
 }
 
 .barradenavegacion .ancho-maximo {
@@ -98,9 +98,11 @@ section .titulo::after {
 }
 
 .barradenavegacion.barrapegada .logo a span {
-    color: whitesmoke;
+    color: #292e49;
 }
-
+.barradenavegacion.barrapegada .logo a {
+    color: #292e49;
+}
 .barradenavegacion .menu li {
     list-style: none;
     display: inline-block;
@@ -115,12 +117,9 @@ section .titulo::after {
     transition: color 0.3s ease;
 }
 
-.barradenavegacion .menu li a:hover {
-    color: #87a3a3;
-}
-
-.barradenavegacion.barrapegada .menu li a:hover {
-    color: #87a3a3;
+.barradenavegacion.barrapegada .menu li a{
+    color: #292e49;
+    font-weight: 600;
 }
 /* estilo del menu */
 .menu-btn {
@@ -132,11 +131,9 @@ section .titulo::after {
 /* texto de cabecera */
 .inicio {
     display: flex;
-    background: hsla(180, 13%, 58%, 1);
-    background: linear-gradient(90deg, hsla(180, 13%, 58%, 1) 0%, hsla(335, 16%, 61%, 1) 100%);
-    background: -moz-linear-gradient(90deg, hsla(180, 13%, 58%, 1) 0%, hsla(335, 16%, 61%, 1) 100%);
-    background: -webkit-linear-gradient(90deg, hsla(180, 13%, 58%, 1) 0%, hsla(335, 16%, 61%, 1) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#87A3A3", endColorstr="#AC8D9A", GradientType=1 );
+    background: #BBD2C5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #292E49, #536976, #BBD2C5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #292E49, #536976, #BBD2C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -258,7 +255,7 @@ section .titulo::after {
 
 .skill-per{
     height: 5px;
-    background-color: #87a3a3;
+    background-color: #292e49;
     border-radius: 8px;
     width: 0;
     transition: 1s linear;
@@ -268,7 +265,7 @@ section .titulo::after {
     opacity: 1;
 }
 
-/* services section styling */
+/* services section servicios */
 .servicio{
     color:#fff;
     background: #87a3a3;
@@ -305,6 +302,80 @@ section .titulo::after {
     margin: 10px 0 7px 0;
 }
 
+/* seleccion diseños */
+.diseño {
+    display: flex;
+    justify-content: center;
+    height: 640px;
+    background: #16384c;
+}
+.servicio-diseño
+{
+    position: relative;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    height: 100%;
+}
+.servicio-diseño .cartas
+{
+	position: relative;
+	max-width: 300px;
+	height: 215px;
+	background: rgb(255, 255, 255);
+	margin: 30px 10px;
+	padding: 20px 15px;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0 5px 20px rgba (0,0,0,0.5);
+	transition: 0.3s ease-in-out;
+    border-radius: 16px;
+}
+/* cambiar el tamaño del despliegue de la carta */
+.servicio-diseño .cartas:hover
+{
+	height: 340px;
+}
+.servicio-diseño .cartas .imgCaja
+{
+	position: relative;
+	width: 260px;
+	height: 260px;
+	top: -60px;
+	left: 5px;
+	z-index:1;
+    box-shadow: 2px 2px 5px #999;
+    border-radius: 10px;
+	box-shadow: 0 5px 20px rgba (0,0,0,0.2);
+
+}
+.servicio-diseño .cartas .imgCaja img
+{
+	max-width: 100%;
+	border-radius: 10px;
+}
+.servicio-diseño .cartas .contenidoss
+{
+	position: relative;
+	margin-top: -140px;
+	padding: 10px 15px;
+	text-align: center;
+	color: rgb(0, 0, 0);
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.3s ease-in-out;
+}
+.servicio-diseño .cartas:hover .contenidoss
+{
+	visibility: visible;
+	opacity: 1;
+	margin-top: -40px;
+	transition-delay: 0.3s;
+}
+
 /* nevegador responsivo */
 
 @media (max-width: 1104px) {
@@ -334,7 +405,7 @@ section .titulo::after {
         width: 50%;
         right: -50%;
         top: 0;
-        background: #ac8d9a;
+        background: #bbd2c5;
         text-align: center;
         padding-top: 80px;
         transition: all 0.3s ease;
